@@ -1,13 +1,19 @@
 # UTSA 20: Unsupervised Machine Learning Challenge
 
 ## Background
-### You are on the data science team of a medical research company that’s interested in finding better ways to predict myopia, or nearsightedness. Your team has tried—and failed—to improve their classification model when training on the whole dataset. However, they believe that there might be distinct groups of patients that would be better to analyze separately. So, your supervisor has asked you to explore this possibility by using unsupervised learning.
+### This project aims to find better ways to predict myopia, or nearsightedness, using unsupervised learning techniques. The data science team of a medical research company has been provided with raw data and asked to explore whether there are distinct groups of patients that can be analyzed separately. The team has tried to improve their classification model when training on the whole dataset but failed.
 
-### You have been provided with raw data, so you’ll first need to process it to fit the machine learning models. You will use several clustering algorithms to explore whether the patients can be placed into distinct groups. Then, you’ll create a visualization to share your findings with your team and other key stakeholders.
+## Data
+### The dataset contains 617 samples and 12-14 variables, depending on the algorithm being tested. The variables include information such as age, gender, parental myopia, and eye exam results.
 
-## Results and Recommendation
-### Results: Neither the t-SNE nor K-means models are able to provide distinct clusters to predict whether a child will develop myopia.
+## Methods
+### The team has used two clustering algorithms, t-SNE and K-means, to explore whether the patients can be placed into distinct groups. However, neither algorithm was able to provide distinct clusters to predict whether a child will develop myopia.
 
-### Analysis: As the dataset contains 12-14 variables (depending on the algorithm being tested), the algorithms must attempt to make complex predictions.  However, the dataset itself contains only 617 samples, which most likely contributes to the inability to find sufficient patterns to make predictions.  This failure is ultimately likely the result of a woefully inadequate sample size.
+## Results and Analysis
+### The small sample size is likely the main contributing factor to the algorithms' inability to find sufficient patterns to make predictions. As the dataset contains several variables, the algorithms need a more extensive sample size to make complex predictions.
 
-### Recommendation: The patients cannot be distinctly clustered, likely because the sample size is too small to provide enough data to train the models for prediction.  Either a larger dataset should be used or more data must be gathered.  The models can then be reapplied to look for patterns to make prediction possible.
+## Recommendations
+### To improve the accuracy of any future predictions, the team recommends increasing the sample size by using a larger dataset or collecting more data. The models can then be reapplied to look for patterns to make prediction possible. The team also suggests considering other clustering algorithms or machine learning techniques to explore the data further.
+
+## Conclusion
+### Based on the results and analysis, it is crucial to communicate the findings and recommendations clearly to the team and other stakeholders. A visualization that shows the data points and the clusters that were identified by the algorithms can be used to explain why the algorithms were not able to provide distinct clusters and how the small sample size is likely the main contributing factor.
